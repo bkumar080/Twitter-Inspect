@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>Twitter Inspect</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="icon" href="/static/cropfingerprint_transparent.png" type="image/gif" sizes="16x16">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('/static/bg.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+input[type=submit]:hover {
+        background-color: #45a049;
+    }
+.button {
+    background-color: #536DFE; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); border-radius: 8px;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+
+  <div class="w3-display-middle">
+    <center><h1 class="w3-jumbo w3-animate-top">TWITTER INSPECT</h1></center>
+      <p><!--[-->An online twitter inspect tool which provides a score for each follower based on the number of tweets,date of last tweet,ratio of followers to friends.Based on the scores returned, it can be determined if any given user is real or fake.<!--]--></p>
+                <form id="static-form" method="post">
+                    <center><label for="fname"><h3><b>Enter A Celebrity Name</b></h3></label></center>
+                    <input type="text" placeholder="Search Name..." required="" name="text">
+                    <center><button class="button button2">Inspect</button></center>
+
+                 </form>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    <p class="copyright">&copy; Bharath Kumar  |  Sindhu Bharathan  |  Vijay Rahul</p>
+  </div>
+</div>
+
+</body>
+</html>

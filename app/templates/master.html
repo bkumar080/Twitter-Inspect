@@ -1,0 +1,121 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>Twitter Inspect</title>
+    
+    
+    <link rel='stylesheet' href='/public/css/main.css'/>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+            <link rel='stylesheet' href='/public/css/main.css'/>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+div.container {
+    width: 100%;
+	
+    border: 1px solid gray;
+}
+
+header {
+	position:fixed; top:0px; margin:auto; z-index:100000; width:100%;
+    border-bottom: 1px solid #AFAFAF;
+    background-color: #80b3ff;
+}
+
+footer {
+position: absolute;
+    bottom: 0px;
+    width: 100%;
+    
+    height: 5em;
+	
+    margin-top: 3em;
+    margin-left: -78px;
+	margin-bottom:43em
+	
+    border-top: 1px solid #AFAFAF;
+background-color: #80b3ff;
+}
+article {
+    
+    border-left: 1px solid gray;
+    padding: 5em;
+    overflow: hidden;
+}
+</style>
+{% if error %}
+<b> Error:</b>{{error}}
+{% endif %}
+<header class="container">
+
+    <div class="w3-container">
+    <h1 align="center">  Twitter Inspect</h1>
+       
+    </div>
+    
+
+</header>
+<main class="container">
+    <article>
+     
+        <h4><b>About Twitter Inspect</b></h4>
+
+        <p>An online twitter inspect tool which provides a score for each follower based on the number of tweets,date of last tweet,ratio of followers to friends.Based on the scores returned, it can be determined if any given user is real or fake.</p>
+         <h2>Let's Get Started!!</h2>
+<div class="row">
+  
+<div class="col-sm-12">
+  
+  <form id="static-form" method="post">
+  
+    <div class="form-group">
+<label><b>Enter A Celebrity Name</b></label>
+<input class="w3-input w3-border w3-margin-bottom" style="width:300px" type="text" placeholder="Search Name..." required="" name="text">
+
+     </div>
+
+ 
+     <div class="form-group">
+    
+     <button style="height:35px;width:80px">Inspect</button>
+ 
+     </div>
+
+      <div class="form-group">
+ 
+       <ul id="list"></ul>
+   
+   </div>
+  
+    
+    </form>
+ 
+ </div>
+
+</div>
+<footer class="container border-top">
+
+    <div class="w3-container">
+    <p>
+                    <a href="mailto:@stevens.edu">Barath Kumar</a> | <a href="mailto:sbaratha@stevens.edu">Sindhu
+                    Barathan</a> | <a href="mailto:@stevens.edu">Vijayrahul Rajathiruvenkatapathy </a> | 
+                </p>
+       
+    </div>
+    
+</footer>
